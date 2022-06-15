@@ -71,3 +71,46 @@ function processForm(){
 
 
 }
+
+
+function loadRegistrationPage(){
+    
+    const xhr = new XMLHttpRequest;
+
+    //open
+    xhr.open("GET", "register.html");
+
+    //load
+    xhr.addEventListener("load", function(){
+        //response
+        const response = xhr.response
+        //console.log(response);
+
+        //let responseChildren = response.childNodes[0].childNodes[1];
+        
+        // console.log(responseChildren)
+
+
+        document.querySelector("#wrapper").innerHTML = response;
+        
+        //document.body.appendChild(responseChildren)
+        let scriptElement = document.createElement("script")
+        scriptElement.src='script2.js'
+
+        document.body.appendChild(scriptElement)
+
+        
+
+
+
+
+
+
+    });
+    
+    //xhr.responseType = 'document';
+    //send
+    xhr.send()
+
+}
+

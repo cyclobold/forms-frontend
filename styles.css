@@ -8,15 +8,31 @@
     margin-left: auto;
 }
 
+.index{
+    background: lightgreen;
+    padding-bottom: 3em;
+}
+
 .block{
     display: block;
+}
+
+
+.checked{
+    color: green;
+    font-weight: bolder;
+}
+
+.not-checked{
+    color: red;
+    font-weight: bolder;
 }
 
 .mt-2{
     margin-top: 20px;
 }
 
-input[type='text'], input[type='password']{
+input[type='text'],input[type='email'], input[type='password']{
     height: 30px;
     width: 300px;
 }
